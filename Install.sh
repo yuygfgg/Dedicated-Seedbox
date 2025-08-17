@@ -80,7 +80,7 @@ if [[ "$OS" =~ "Debian" ]]; then	#Debian 10+ are supported
 fi
 
 if [[ "$OS" =~ "Ubuntu" ]]; then #Ubuntu 20.04+ are supported
-	if [[ ! "$VER" =~ "20" ]] && [[ ! "$VER" =~ "22" ]] && [[ ! "$VER" =~ "23" ]]; then
+	if [[ ! "$VER" =~ "20" ]] && [[ ! "$VER" =~ "22" ]] && [[ ! "$VER" =~ "23" ]] && [[ ! "$VER" =~ "24" ]]; then
 		fail "$OS $VER is not supported"
 		info "Only Ubuntu 20.04+ is supported"
 		exit 1
